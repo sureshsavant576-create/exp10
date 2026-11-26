@@ -1,7 +1,11 @@
-stage('Docker Verification') {
-    steps {
-        bat 'where docker'
-        bat 'docker --version'
-        bat 'docker info'
+pipeline {
+    agent any
+
+    stages {
+        stage('Docker Verification') {
+            steps {
+                bat 'docker --version'
+            }
+        }
     }
 }
