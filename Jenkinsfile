@@ -10,6 +10,7 @@ pipeline {
                 bat 'where docker'
                 bat 'docker --version'
                 bat 'docker info'
+                bat 'docker ps'
             }
         }
     }
